@@ -8,13 +8,11 @@ import Competences from './categories/competences.js';
 import Experiences from './categories/experiences.js';
 import Formation from './categories/formation.js';
 import References from './categories/references.js';
-import SavoirEtre from './categories/savoir-etre.js';
+import Portfolio from './categories/portfolio.js';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import BuildIcon from '@material-ui/icons/Build';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-import FaceIcon from '@material-ui/icons/Face';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); 
 
@@ -22,7 +20,7 @@ class Menu extends React.PureComponent{
 constructor(){
     super();
     this.state = {render:"profil", items:
-    ['profil', 'competences', 'experiences', 'formation', 'references', 'savoir etre'],
+    ['profil', 'competences', 'experiences', 'formation', 'references', 'portfolio'],
 active: false}; 
 }
 
@@ -41,7 +39,7 @@ renderComp(){
         case 'experiences': return <Experiences />;
         case 'formation' : return <Formation />;
         case 'references' : return <References />;
-        case 'savoir etre': return <SavoirEtre />;
+        case 'portfolio': return <Portfolio />;
         default:       
     }   
 }

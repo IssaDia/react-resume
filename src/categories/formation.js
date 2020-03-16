@@ -36,7 +36,7 @@ class Formation extends React.Component{
                     </ul>
                 </div>
                 <div>
-                    <h5>développeur web/ web mobile (bac+2)</h5>
+                    <h5>Développeur web/ web mobile (bac+2)</h5>
                     <p>Human Booster (Lyon) | Juillet 2018 - Avil 2019</p>
                     <p>Projet personnel : Création d'un blog de voyage avec Symfony 4</p>
                     <ul>
@@ -55,7 +55,7 @@ class Formation extends React.Component{
                     </ul>
                 </div>
                 <div>
-                <h5>e-learning</h5>
+                <h5>E-learning</h5>
                     <p>OpenClassRooms | Juin 2018 - Maintenant</p>
                 </div>
                 <div>

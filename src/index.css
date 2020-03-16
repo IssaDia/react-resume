@@ -3,7 +3,7 @@ body {
   color: white;
   font-weight: 400;
   font-size: 12px;
-  font-family: Raleway,sans-serif !important;
+  font-family: Raleway, sans-serif !important;
 }
 
 .container {
@@ -21,12 +21,16 @@ h1 {
   color: #262626;
 
 }
+
 h3 {
   color: #5D75FB;
+
 }
+
 
 h5+p {
   color: #5D75FB;
+  
 }
 
 .title-paragraph {
@@ -51,10 +55,15 @@ h5+p {
 
 }
 
-
 .infos-block {
   margin-top: 20px;
   padding-left: 20px;
+
+}
+
+.infos-block p {
+  font-size: 14px;
+  color: #5d75fb;
 
 }
 
@@ -89,6 +98,7 @@ h5+p {
 .content {
   background-color: #ffffff;
   margin-top: 30px;
+  padding-top: 20px;
 }
 
 .logo {
@@ -98,61 +108,68 @@ h5+p {
 }
 
 .logo-container {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.logo-container span {
+ 
+  padding-top: 12px;
+  padding-left: 10px;
+
 }
 
 .competences-title {
   color: #FFBD59;
+  margin-bottom: 15px;
+
 }
 
 .nav-perso {
-  width:100%;
+  width: 100%;
   height: 60px;
-  display:table;
-  border-collapse:collapse;
+  display: table;
+  border-collapse: collapse;
   background-color: #ffffff;
 
 }
 
-
-
 .nav-perso li a {
-  text-decoration:none;
-    color:#444;
+  text-decoration: none;
+  color: #444;
 }
-
 
 .nav-perso li span:hover {
   color: #ffffff;
- }
+}
 
 
 .nav-perso li a:hover {
- color: #ffffff;
+  color: #ffffff;
 }
-.nav-perso li span{
-  display:inline-block;
-  vertical-align:middle;
+
+.nav-perso li span {
+  display: inline-block;
+  vertical-align: middle;
   color: #696969;
   padding-left: 5px;
   font-size: 14px;
 
 }
 
-.nav-perso li:hover{
-  background-color:#346abb;
+.nav-perso li:hover {
+  background-color: #346abb;
   color: #ffffff;
-  
+
 }
 
-.nav-perso li{
+.nav-perso li {
   padding-top: 20px;
-  display:table-cell;
-  text-align:center;
+  display: table-cell;
+  text-align: center;
   width: 20%;
-
-
 }

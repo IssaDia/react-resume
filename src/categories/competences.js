@@ -15,21 +15,13 @@ import git from '../assets/images/git.png';
 import scrum from '../assets/images/scrum.svg';
 import toeic from '../assets/images/toeic.jpg';
 
-
-
-
-
-
 class Competences extends React.Component{
-
 
     render() 
         {
             return(
-                
-                <>
-                
-                <hr></hr>
+               
+                <>      
                 <div>
                     <h6 className='competences-title'>Langages</h6>
                     <div className='logo-container'>
@@ -89,7 +81,7 @@ class Competences extends React.Component{
                             <img className='logo' src={scrum}></img><span>Scrum</span>
                         </div>
                         <div className='logo-container'>
-                            <img className='logo' src={toeic}></img><span>TOEIC</span>
+                            <img className='logo' src={toeic}></img><span>TOEIC (965/990)</span>
                         </div>
                     </div>
                 </div>
