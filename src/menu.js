@@ -17,18 +17,21 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group'); 
 
 class Menu extends React.PureComponent{
+
 constructor(){
     super();
     this.state = {render:"profil", items:
     ['profil', 'competences', 'experiences', 'formation', 'references', 'portfolio'],
-active: false}; 
+isActive: true}; 
 }
-
 
 handleClick(compName){  
 
     this.setState({render:compName});
-    this.setState({active:true});
+    this.setState({isActive:!this.state.isActive});
+   
+
+    
 
 }
 
@@ -46,18 +49,21 @@ renderComp(){
 
 render() 
     {
+        
+
         return(
             
             <React.Fragment>
                 <Router>
                     <nav className='menu-wrapper'>
-                        <ul className="nav-perso">
-                        <li><NavLink to="profil"  activeClassName="active" onClick={this.handleClick.bind(this, 'profil')}><PersonOutlineIcon style={{ fontSize: 15 }}/><span> BIO</span></NavLink></li>
-                        <li><NavLink to="/competences"  onClick={this.handleClick.bind(this, 'competences')}><BuildIcon style={{ fontSize: 15 }} /><span> COMPETENCES</span></NavLink></li>
-                        <li><NavLink to="/experiences" onClick={this.handleClick.bind(this, 'experiences')}><BusinessCenterIcon style={{ fontSize: 15 }} /><span> EXPERIENCES</span></NavLink></li>
-                        <li><NavLink to="/formation"  onClick={this.handleClick.bind(this, 'formation')}><AccountBalanceIcon style={{ fontSize: 15 }} /><span> FORMATION</span></NavLink></li>
-                        <li><NavLink to="/portfolio"  onClick={this.handleClick.bind(this, 'portfolio')}><span>PORTFOLIO</span></NavLink></li>  
-                        </ul>
+                        <div className='nav-perso'>
+                        <NavLink className= {'nav-perso-link' + ( this.state.isActive ? ' active' : '')}    to="profil" onClick={this.handleClick.bind(this, 'profil')}><PersonOutlineIcon style={{ fontSize: 15 }}/><span> BIO</span></NavLink>
+                        <NavLink className='nav-perso-link'  to="/competences"  onClick={this.handleClick.bind(this, 'competences')}><BuildIcon style={{ fontSize: 15 }} /><span> COMPETENCES</span></NavLink>
+                        <NavLink className='nav-perso-link' to="/experiences" onClick={this.handleClick.bind(this, 'experiences')}><BusinessCenterIcon style={{ fontSize: 15 }} /><span> EXPERIENCES</span></NavLink>
+                        <NavLink className='nav-perso-link' to="/formation"  onClick={this.handleClick.bind(this, 'formation')}><AccountBalanceIcon style={{ fontSize: 15 }} /><span> FORMATION</span></NavLink>
+                        <NavLink className='nav-perso-link' to="/portfolio"  onClick={this.handleClick.bind(this, 'portfolio')}><span>PORTFOLIO</span></NavLink>  
+                        </div>   
+                       
                     </nav>
   
                     <div className='content'>

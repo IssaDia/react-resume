@@ -1,7 +1,6 @@
 $font-title : #262626;
 $font-text: #333;
-$blue: #3498db;
-$red: #e74c3c;
+
 
 
 @import '~bootstrap/scss/bootstrap';
@@ -62,6 +61,7 @@ h5+p {
 
     margin-top: 20px;
     margin-left: 15px;
+    color: #346abb;
 
 }
 
@@ -263,10 +263,6 @@ h6 {
     color: #444;
 }
 
-.nav-perso li:hover {
-    color: #ffffff;
-}
-
 
 
 .nav-perso li span {
@@ -278,17 +274,32 @@ h6 {
 
 }
 
-.nav-perso li:active {
+.nav-perso-link.active {
     background-color: #346abb;
     color: #ffffff;
 
 }
 
-.nav-perso li {
+
+.nav-perso-link:hover {
+   
+    text-decoration: none;
+    
+}
+
+.nav-perso-link {
     padding-top: 20px;
     display: table-cell;
     text-align: center;
     width: 20%;
+    text-decoration: none;
+    color: #777;
+}
+
+.nav-perso-link span {
+    
+    font-weight: 700;
+    
 }
 
 /* Portfolio */
