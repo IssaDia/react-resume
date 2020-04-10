@@ -46,24 +46,17 @@ renderComp(){
 
 render() 
     {
-
-    /*    function capitalizeFirstLetter(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1);
-        }
-        const animations = this.state.items.map((item, i) => {
-            return  <NavLink to={item} key={i} className="nav-NavLink" onClick={this.handleClick.bind(this, item)}> {capitalizeFirstLetter(item)}  </NavLink>;
-        }) */
         return(
             
             <React.Fragment>
                 <Router>
                     <nav className='menu-wrapper'>
                         <ul className="nav-perso">
-                        <li><NavLink to="profil" activeClassName="active" onClick={this.handleClick.bind(this, 'profil')}><PersonOutlineIcon style={{ fontSize: 15 }}/><span> BIO</span></NavLink></li>
-                        <li><NavLink to="/competences" activeClassName="active" onClick={this.handleClick.bind(this, 'competences')}><BuildIcon style={{ fontSize: 15 }} /><span> COMPETENCES</span></NavLink></li>
-                        <li><NavLink to="/experiences" activeClassName="active" onClick={this.handleClick.bind(this, 'experiences')}><BusinessCenterIcon style={{ fontSize: 15 }} /><span> EXPERIENCES</span></NavLink></li>
-                        <li><NavLink to="/formation" activeClassName="active" onClick={this.handleClick.bind(this, 'formation')}><AccountBalanceIcon style={{ fontSize: 15 }} /><span> FORMATION</span></NavLink></li>
-                        <li><NavLink to="/portfolio" activeClassName="active" onClick={this.handleClick.bind(this, 'portfolio')}><span>PORTFOLIO</span></NavLink></li>  
+                        <li><NavLink to="profil"  activeClassName="active" onClick={this.handleClick.bind(this, 'profil')}><PersonOutlineIcon style={{ fontSize: 15 }}/><span> BIO</span></NavLink></li>
+                        <li><NavLink to="/competences"  onClick={this.handleClick.bind(this, 'competences')}><BuildIcon style={{ fontSize: 15 }} /><span> COMPETENCES</span></NavLink></li>
+                        <li><NavLink to="/experiences" onClick={this.handleClick.bind(this, 'experiences')}><BusinessCenterIcon style={{ fontSize: 15 }} /><span> EXPERIENCES</span></NavLink></li>
+                        <li><NavLink to="/formation"  onClick={this.handleClick.bind(this, 'formation')}><AccountBalanceIcon style={{ fontSize: 15 }} /><span> FORMATION</span></NavLink></li>
+                        <li><NavLink to="/portfolio"  onClick={this.handleClick.bind(this, 'portfolio')}><span>PORTFOLIO</span></NavLink></li>  
                         </ul>
                     </nav>
   

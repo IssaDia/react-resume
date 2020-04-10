@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import {
   BrowserRouter as Router,
   Route}
@@ -11,6 +10,8 @@ import Col from 'react-bootstrap/Col';
 import Presentation from './presentation.js';
 import Identity from './card.js';
 import Menu from './menu.js';
+import './index.scss';
+
 
 
 class Wrapper extends React.PureComponent {
@@ -19,14 +20,14 @@ class Wrapper extends React.PureComponent {
         <Container>
           <Row>
             <Col sm={12}>
-              <Presentation name = "ISSA DIA" description = "Développeur Web"></Presentation>
+              <Presentation name = "Issa Dia" description = "Développeur Web React/Symfony"></Presentation>
             </Col>
           </Row>
           <Row>
-            <Col md ={4}>
+            <Col md ={3}>
               <Identity></Identity>
             </Col>
-            <Col md ={8}>
+            <Col md ={9}>
               <Menu></Menu>
             </Col>
           </Row>

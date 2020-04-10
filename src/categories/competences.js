@@ -24,67 +24,53 @@ class Competences extends React.Component{
                 <>      
                 <div>
                     <h6 className='competences-title'>Langages</h6>
-                    <div className='logo-container'>
-                        <img className='logo' src={javascript}></img><span>Javascript</span>
-                     </div>
-                     <div className='logo-container'>
-                        <img className='logo' src={php}></img><span>Php</span>
-                     </div>
-                    <div className='logo-container'>
-                        <img className='logo' src={mysql}></img><span>MySQL</span>
-                    </div>
-                   
+                    <div>
+                        <ul className='competences-list'>
+                            <li><img alt= 'logo' className='competences-logo' src={javascript}></img><span>Javascript</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={php}></img><span>Php</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={mysql}></img><span>Mysql</span></li>
+                        </ul>
+                    </div>       
                 </div>
                 <div>
                     <h6 className='competences-title'>Librairies</h6>
                     <div>
-                        <div className='logo-container'>
-                            <img className='logo' src={react}></img><span>React</span>
-                        </div>
-                        <div className='logo-container'>
-                            <img className='logo' src={vue}></img><span>Vue</span>
-                        </div>
+                        <ul className='competences-list'>
+                            <li><img alt= 'logo' className='competences-logo' src={react}></img><span>React</span></li>
+                        </ul>  
                     </div>
                 </div>
                 <div>
                     <h6 className='competences-title'>Framework</h6>
                     <div>
-                        <div className='logo-container'>
-                            <img className='logo' src={symfony}></img><span>Symfony</span>
-                        </div>
-                        <div className='logo-container'>
-                            <img className='logo' src={bootstrap}></img><span>Bootstrap</span>
-                        </div>
+                        <ul className='competences-list'>
+                            <li><img alt= 'logo' className='competences-logo' src={symfony}></img><span>Symfony</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={bootstrap}></img><span>Bootstrap</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={vue}></img><span>Vue</span></li>
+                        </ul>   
                     </div>
                 </div>
                 <div>
                     <h6 className='competences-title'>CMS</h6>
                     <div>
-                        <div className='logo-container'>
-                            <img className='logo' src={wordpress}></img><span>Wordpress</span>
-                        </div>
-                        <div className='logo-container'>
-                            <img className='logo' src={woocommerce}></img><span>Woocommerce</span>
-                        </div>
-                        <div className='logo-container'>
-                            <img className='logo' src={magento}></img><span>Magento</span>
-                        </div>
-                        </div>
+                        <ul className='competences-list'>
+                            <li><img alt= 'logo' className='competences-logo' src={wordpress}></img><span>Wordpress</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={woocommerce}></img><span>Woocommerce</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={magento}></img><span>Magento</span></li>
+                    </ul>
                     </div>
+                </div>
                 <div>
                     <h6 className='competences-title'>Divers</h6>
                     <div>
-                        <div className='logo-container'>
-                            <img className='logo' src={git}></img><span>Git</span>
-                        </div>
-                        <div className='logo-container'>
-                            <img className='logo' src={scrum}></img><span>Scrum</span>
-                        </div>
-                        <div className='logo-container'>
-                            <img className='logo' src={toeic}></img><span>TOEIC (965/990)</span>
-                        </div>
+                        <ul className='competences-list'>
+                            <li><img alt= 'logo' className='competences-logo' src={git}></img><span>Git</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={scrum}></img><span>Scrum</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={toeic}></img><span>TOEIC (965/990)</span></li>
+                         </ul>
                     </div>
                 </div>
+            
               
                 </>
                 

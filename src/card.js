@@ -12,8 +12,8 @@ class Identity extends React.Component {
 <div className="card">
 
 <div className="card-body">
-  <h2 className="card-title">A PROPOS DE MOI</h2>
-  <img className="card-img-top" src={CvImage} alt="photo Issa"></img>
+  <h2 className="card-title">À propos de moi</h2>
+  <img className="card-img-top" src={CvImage} alt="Issa"></img>
   <ul className='infos-block'>
                                 <li>
                                 <span>NOM</span>
@@ -47,7 +47,7 @@ class Identity extends React.Component {
                                 <span>PASSIONS</span>
                                     <p>
                                         
-                                        Voyages,Ecriture,Lecture,Musculation,Boxe
+                                        Voyages, Ecriture, Lecture, Musculation, Boxe
                                     </p>
                                 </li>
                             </ul>
