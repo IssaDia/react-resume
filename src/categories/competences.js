@@ -66,7 +66,7 @@ class Competences extends React.Component{
                         <ul className='competences-list'>
                             <li><img alt= 'logo' className='competences-logo' src={git}></img><span>Git</span></li>
                             <li><img alt= 'logo' className='competences-logo' src={scrum}></img><span>Scrum</span></li>
-                            <li><img alt= 'logo' className='competences-logo' src={toeic}></img><span>TOEIC (965/990)</span></li>
+                            <li><img alt= 'logo' className='competences-logo' src={toeic}></img><span>TOEIC (965/990 points)</span></li>
                          </ul>
                     </div>
                 </div>

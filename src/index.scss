@@ -89,11 +89,7 @@ h6 {
 
 }
 
-
-
-
 .xp-title {
-    padding-left: 15px;
     margin-top: 15px;
     letter-spacing: 1px;
     font-size: 14px;
@@ -175,6 +171,8 @@ h6 {
     letter-spacing: .5px;
     text-rendering: optimizeLegibility;
     line-height: 30px;
+    font-weight: bold;
+
 }
 
 
@@ -236,6 +234,7 @@ h6 {
 .competences-list span {
 
     color: $font-text;
+    font-weight: bolder;
     margin-right: 40px;
 
 }
@@ -258,21 +257,7 @@ h6 {
 
 }
 
-.nav-perso li a {
-    text-decoration: none;
-    color: #444;
-}
 
-
-
-.nav-perso li span {
-    display: inline-block;
-    vertical-align: middle;
-    color: #696969;
-    padding-left: 5px;
-    font-size: 14px;
-
-}
 
 .nav-perso-link.active {
     background-color: #346abb;
@@ -282,9 +267,9 @@ h6 {
 
 
 .nav-perso-link:hover {
-   
+
     text-decoration: none;
-    
+
 }
 
 .nav-perso-link {
@@ -297,15 +282,39 @@ h6 {
 }
 
 .nav-perso-link span {
-    
+
     font-weight: 700;
-    
+    margin-top: 15px;
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .nav-perso-link span {
+        font-size: 8px;
+    }
+
+    .nav-perso {
+        margin-top: 20px;
+    }
 }
 
 /* Portfolio */
 
 .portfolio-container {
     text-align: center;
+}
+
+.portfolio-container img {
+    height: 200px;
+    width: 200px;
+}
+
+.portfolio-text {
+    color: #ffb535;
+    font-weight: bolder;
 }
 
 .button-site {

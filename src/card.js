@@ -13,7 +13,7 @@ class Identity extends React.Component {
 
 <div className="card-body">
   <h2 className="card-title">À propos de moi</h2>
-  <img className="card-img-top" src={CvImage} alt="Issa"></img>
+  <img className="card-img-top img-fluid" src={CvImage} alt="Issa"></img>
   <ul className='infos-block'>
                                 <li>
                                 <span>NOM</span>
